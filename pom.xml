@@ -36,6 +36,9 @@
                         <id>copy-dependencies</id>
                         <phase>package</phase>
                         <goals><goal>copy-dependencies</goal></goals>
+                        <configuration>
+                            <includeArtifactIds>webapp-runner</includeArtifactIds>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -50,5 +53,11 @@
     <version>3.0.1</version>
     <scope>provided</scope>
 </dependency>
+<dependency>
+            <groupId>com.github.jsimone</groupId>
+            <artifactId>webapp-runner</artifactId>
+            <version>7.0.22</version>
+            <scope>provided</scope>
+        </dependency>
   </dependencies>
 </project>
